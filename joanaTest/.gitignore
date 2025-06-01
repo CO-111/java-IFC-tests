@@ -1,0 +1,4 @@
+# Ignore only .graphml and .png files in joanaTest directory
+*.graphml
+*.png
+*.jar
