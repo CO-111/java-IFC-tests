@@ -1,0 +1,15 @@
+[submodule "joanaTest/test/bank-management-system-in-java"]
+	path = joanaTest/test/bank-management-system-in-java
+	url = https://github.com/sawongam/bank-management-system-in-java.git
+[submodule "joanaTest/test/Online-Banking-System-using-Java"]
+	path = joanaTest/test/Online-Banking-System-using-Java
+	url = https://github.com/mishrkavita/Online-Banking-System-using-Java.git
+[submodule "joanaTest/test/Bank-Application"]
+	path = joanaTest/test/Bank-Application
+	url = https://github.com/JohnNtirintis/Bank-Application.git
+[submodule "joanaTest/test/Java-Bank_Management_System"]
+	path = joanaTest/test/Java-Bank_Management_System
+	url = https://github.com/parthd06/Java-Bank_Management_System.git
+[submodule "joanaTest/test/bank-management-system-with-atm-feature-using-java-gui-interface"]
+	path = joanaTest/test/bank-management-system-with-atm-feature-using-java-gui-interface
+	url = https://github.com/meamirghafoor/bank-management-system-with-atm-feature-using-java-gui-interface.git
