@@ -1,0 +1,3183 @@
+SDG "test.starttest1.ExampleIFC.main(java.lang.String[])" root 18 {
+ENTR 1 {
+O entry;
+V "test.starttest1.ExampleIFC.main(java.lang.String[])";
+P 4;
+S "test/starttest1/ExampleIFC.java":0,0-0,0;
+B "test.starttest1.ExampleIFC.main([Ljava/lang/String;)V":-1;
+Z 0;
+C "Application";
+HE 2;
+HE 3;
+HE 4;
+HE 5;
+HE 15;
+HE 207;
+HE 208;
+PS 3;
+PS 4;
+PS 15;
+CF 207;
+CD 5;
+CE 2;
+CE 3;
+CE 4;
+CE 15;
+CE 207;
+CE 208;
+}
+EXIT 2 {
+O exit;
+V "test.starttest1.ExampleIFC.main(java.lang.String[])";
+T "V";
+P 4;
+S "test/starttest1/ExampleIFC.java":0,0-0,0;
+B "<exit>":-2;
+Z 0;
+RF 246;
+}
+FRMO 3 {
+O form-out;
+V "_exception_";
+T "Ljava/lang/Exception";
+P 4;
+S "test/starttest1/ExampleIFC.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+PS 207;
+PS 208;
+CF 208: "exc";
+PO 36;
+}
+FRMI 4 {
+O form-in;
+V "param 1";
+T "[Ljava/lang/String";
+P 4;
+S "test/starttest1/ExampleIFC.java":0,0-0,0;
+B "<param> 1":-2;
+Z 0;
+LD ["null"];
+PS 207;
+PS 208;
+CF 15;
+}
+CALL 5 {
+O call;
+V "v4 = getSecret()";
+T "Ljava/lang/String";
+P 4;
+S "test/starttest1/ExampleIFC.java":6,0-6,0;
+B "test.starttest1.ExampleIFC.main([Ljava/lang/String;)V":0;
+Z 0;
+HE 6;
+HE 7;
+PS 6;
+PS 7;
+CF 244;
+CE 6;
+CE 7;
+CE 244;
+CL 58: "virtual";
+}
+ACTO 6 {
+O act-out;
+V "ret 0";
+T "Ljava/lang/String";
+P 4;
+S "test/starttest1/ExampleIFC.java":6,0-6,0;
+B "<exit>":-2;
+Z 0;
+CF 7: "exc";
+CF 9;
+DD 12;
+}
+ACTO 7 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 4;
+S "test/starttest1/ExampleIFC.java":6,0-6,0;
+B "<exception>":-2;
+Z 0;
+HE 244;
+CF 3: "exc";
+CE 244;
+}
+EXPR 8 {
+O reference;
+V "v5 = java.lang.System.out";
+T "Ljava/io/PrintStream";
+P 4;
+S "test/starttest1/ExampleIFC.java":7,0-7,0;
+B "test.starttest1.ExampleIFC.main([Ljava/lang/String;)V":4;
+Z 0;
+HE 9;
+CF 11;
+CE 9;
+DD 11;
+}
+NORM 9 {
+O compound;
+V "field out";
+T "Ljava/io/PrintStream";
+P 4;
+S "test/starttest1/ExampleIFC.java":7,0-7,0;
+B "Ljava/lang/System.out":-3;
+Z 0;
+CF 8;
+DD 8;
+}
+CALL 10 {
+O call;
+V "v5.println(v4)";
+T "V";
+P 4;
+S "test/starttest1/ExampleIFC.java":7,0-7,0;
+B "test.starttest1.ExampleIFC.main([Ljava/lang/String;)V":8;
+Z 0;
+HE 11;
+HE 12;
+HE 13;
+PS 11;
+PS 12;
+PS 13;
+CF 13: "exc";
+CF 245;
+CE 11;
+CE 12;
+CE 13;
+CE 245;
+CL 63: "virtual";
+}
+ACTI 11 {
+O act-in;
+V "this [v5]";
+T "Ljava/io/PrintStream";
+P 4;
+S "test/starttest1/ExampleIFC.java":7,0-7,0;
+B "<param> 0":-2;
+Z 0;
+CF 12;
+CD 10;
+PI 66;
+}
+ACTI 12 {
+O act-in;
+V "param 1 [v4]";
+T "Ljava/lang/String";
+P 4;
+S "test/starttest1/ExampleIFC.java":7,0-7,0;
+B "<param> 1":-2;
+Z 0;
+CF 10;
+PI 67;
+}
+ACTO 13 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 4;
+S "test/starttest1/ExampleIFC.java":7,0-7,0;
+B "<exception>":-2;
+Z 0;
+HE 245;
+CF 3: "exc";
+CE 245;
+DD 3;
+}
+NORM 14 {
+O compound;
+V "return";
+T "V";
+P 4;
+S "test/starttest1/ExampleIFC.java":8,0-8,0;
+B "test.starttest1.ExampleIFC.main([Ljava/lang/String;)V":11;
+Z 0;
+CF 208;
+}
+FRMI 15 {
+O form-in;
+V "out";
+T "Ljava/io/PrintStream";
+P 4;
+S "test/starttest1/ExampleIFC.java":0,0-0,0;
+B "Ljava/lang/System.out":-3;
+Z 0;
+PS 207;
+PS 208;
+CF 5;
+DD 9;
+}
+ENTR 18 {
+O entry;
+V "com.ibm.wala.FakeRootClass.fakeRootMethod()";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+C "Primordial";
+HE 19;
+HE 20;
+HE 21;
+HE 178;
+HE 209;
+HE 210;
+PS 20;
+PS 178;
+CF 209;
+CD 21;
+CE 19;
+CE 20;
+CE 178;
+CE 209;
+CE 210;
+}
+EXIT 19 {
+O exit;
+V "com.ibm.wala.FakeRootClass.fakeRootMethod()";
+T "V";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exit>":-2;
+Z 0;
+}
+FRMO 20 {
+O form-out;
+V "_exception_";
+T "Ljava/lang/Exception";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+PS 209;
+PS 210;
+CF 210: "exc";
+}
+CALL 21 {
+O call;
+V "fakeWorldClinit()";
+T "V";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+U "com.ibm.wala.FakeRootClass.fakeWorldClinit()V";
+HE 22;
+HE 23;
+HE 211;
+HE 212;
+HE 227;
+PS 22;
+CF 227;
+CD 23;
+CE 22;
+CE 211;
+CE 212;
+CE 227;
+}
+ACTO 22 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+CF 20: "exc";
+DD 20;
+}
+CALL 23 {
+O call;
+V "<init>()";
+T "V";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+U "fieldhelper.FieldHelper.<init>()V";
+HE 24;
+HE 25;
+HE 228;
+PS 24;
+CF 24: "exc";
+CF 228;
+CD 25;
+CE 24;
+CE 228;
+}
+ACTO 24 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+CF 20: "exc";
+DD 20;
+}
+NORM 25 {
+O declaration;
+V "v4 = new java.lang.String[]";
+T "[Ljava/lang/String";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+HE 26;
+HE 28;
+CF 20: "exc";
+CF 26;
+CD 20;
+CD 26;
+CD 28;
+DD 28;
+DD 32;
+DD 35;
+}
+NORM 26 {
+O declaration;
+V "v6 = new java.lang.String";
+T "Ljava/lang/String";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+CF 28;
+DD 27;
+}
+EXPR 27 {
+O modify;
+V "v4[#(0)] = v6";
+T "Ljava/lang/String";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+CF 29;
+CE 29;
+DD 29;
+}
+NORM 28 {
+O compound;
+V "base";
+T "[Ljava/lang/Object";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+HE 29;
+HE 30;
+HE 31;
+PS 29;
+CF 20: "exc";
+CF 30;
+CF 32;
+CD 20;
+CD 29;
+CD 30;
+CD 31;
+CE 30;
+DD 27;
+}
+NORM 29 {
+O compound;
+V "field [java.lang.Object]";
+T "Ljava/lang/Object";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+CF 28;
+}
+NORM 30 {
+O compound;
+V "index";
+T "I";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+HE 27;
+CF 27;
+CE 27;
+CE 28;
+DD 27;
+}
+CALL 31 {
+O call;
+V "v4.<init>()";
+T "V";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+U "java.lang.Object.<init>()V";
+HE 32;
+HE 33;
+HE 34;
+HE 213;
+HE 225;
+HE 229;
+PS 32;
+PS 33;
+CF 229;
+CD 34;
+CE 32;
+CE 33;
+CE 213;
+CE 225;
+CE 229;
+}
+ACTI 32 {
+O act-in;
+V "this [v4]";
+T "Ljava/lang/Object";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<param> 0":-2;
+Z 0;
+PS 213;
+CF 31;
+CD 31;
+DD 229;
+}
+ACTO 33 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+PS 213;
+CF 20: "exc";
+DD 20;
+DD 225;
+}
+CALL 34 {
+O call;
+V "main(v4)";
+T "V";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+HE 35;
+HE 36;
+HE 179;
+HE 214;
+HE 215;
+PS 35;
+PS 36;
+PS 179;
+CF 246;
+CE 35;
+CE 36;
+CE 179;
+CE 214;
+CE 215;
+CE 246;
+CL 1: "virtual";
+}
+ACTI 35 {
+O act-in;
+V "param 1 [v4]";
+T "[Ljava/lang/String";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<param> 1":-2;
+Z 0;
+PS 214;
+PS 215;
+CF 179;
+PI 4;
+}
+ACTO 36 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+HE 246;
+PS 214;
+PS 215;
+CF 20: "exc";
+CE 246;
+DD 20;
+}
+NORM 37 {
+O declaration;
+V "v10 = new java.io.FileInputStream";
+T "Ljava/io/FileInputStream";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+CF 39;
+DD 39;
+DD 42;
+}
+CALL 38 {
+O call;
+V "v10.<init>()";
+T "V";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+U "java.io.InputStream.<init>()V";
+HE 39;
+HE 40;
+HE 41;
+HE 216;
+HE 230;
+PS 39;
+PS 40;
+CF 230;
+CD 41;
+CE 39;
+CE 40;
+CE 216;
+CE 230;
+}
+ACTI 39 {
+O act-in;
+V "this [v10]";
+T "Ljava/io/InputStream";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<param> 0":-2;
+Z 0;
+PS 216;
+CF 38;
+CD 38;
+DD 230;
+}
+ACTO 40 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+PS 216;
+CF 20: "exc";
+DD 20;
+}
+CALL 41 {
+O call;
+V "v10.finalize()";
+T "V";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+U "java.io.FileInputStream.finalize()V";
+HE 42;
+HE 43;
+HE 44;
+HE 45;
+HE 217;
+HE 231;
+PS 42;
+PS 43;
+CF 43: "exc";
+CF 231;
+CD 44;
+CD 45;
+CE 42;
+CE 43;
+CE 217;
+CE 231;
+}
+ACTI 42 {
+O act-in;
+V "this [v10]";
+T "Ljava/io/FileInputStream";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<param> 0":-2;
+Z 0;
+PS 217;
+CF 217;
+CD 41;
+DD 231;
+}
+ACTO 43 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+CF 20: "exc";
+DD 20;
+}
+NORM 44 {
+O declaration;
+V "v13 = new java.io.FileOutputStream";
+T "Ljava/io/FileOutputStream";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+CF 46;
+DD 46;
+DD 49;
+}
+CALL 45 {
+O call;
+V "v13.<init>()";
+T "V";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+U "java.io.OutputStream.<init>()V";
+HE 46;
+HE 47;
+HE 48;
+HE 218;
+HE 232;
+PS 46;
+PS 47;
+CF 232;
+CD 48;
+CE 46;
+CE 47;
+CE 218;
+CE 232;
+}
+ACTI 46 {
+O act-in;
+V "this [v13]";
+T "Ljava/io/OutputStream";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<param> 0":-2;
+Z 0;
+PS 218;
+CF 45;
+CD 45;
+DD 232;
+}
+ACTO 47 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+PS 218;
+CF 20: "exc";
+DD 20;
+}
+CALL 48 {
+O call;
+V "v13.finalize()";
+T "V";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+U "java.io.FileOutputStream.finalize()V";
+HE 49;
+HE 50;
+HE 51;
+HE 52;
+HE 219;
+HE 233;
+PS 49;
+PS 50;
+CF 50: "exc";
+CF 233;
+CD 51;
+CD 52;
+CE 49;
+CE 50;
+CE 219;
+CE 233;
+}
+ACTI 49 {
+O act-in;
+V "this [v13]";
+T "Ljava/io/FileOutputStream";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<param> 0":-2;
+Z 0;
+PS 219;
+CF 219;
+CD 48;
+DD 233;
+}
+ACTO 50 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+PS 219;
+CF 20: "exc";
+DD 20;
+}
+NORM 51 {
+O declaration;
+V "v16 = new java.lang.ClassLoader$NativeLibrary";
+T "Ljava/lang/ClassLoader$NativeLibrary";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+CF 53;
+DD 53;
+DD 56;
+}
+CALL 52 {
+O call;
+V "v16.<init>()";
+T "V";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+U "java.lang.Object.<init>()V";
+HE 53;
+HE 54;
+HE 55;
+HE 220;
+HE 226;
+HE 234;
+PS 53;
+PS 54;
+CF 234;
+CD 55;
+CE 53;
+CE 54;
+CE 220;
+CE 226;
+CE 234;
+}
+ACTI 53 {
+O act-in;
+V "this [v16]";
+T "Ljava/lang/Object";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<param> 0":-2;
+Z 0;
+PS 220;
+CF 52;
+CD 52;
+DD 234;
+}
+ACTO 54 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+PS 220;
+CF 20: "exc";
+DD 20;
+DD 226;
+}
+CALL 55 {
+O call;
+V "v16.finalize()";
+T "V";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+U "java.lang.ClassLoader$NativeLibrary.finalize()V";
+HE 56;
+HE 57;
+HE 221;
+HE 222;
+HE 235;
+PS 56;
+PS 57;
+CF 235;
+CE 56;
+CE 57;
+CE 221;
+CE 222;
+CE 235;
+}
+ACTI 56 {
+O act-in;
+V "this [v16]";
+T "Ljava/lang/ClassLoader$NativeLibrary";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<param> 0":-2;
+Z 0;
+PS 221;
+PS 222;
+CF 221;
+CD 55;
+DD 235;
+}
+ACTO 57 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+PS 221;
+PS 222;
+CF 20: "exc";
+DD 20;
+}
+ENTR 58 {
+O entry;
+V "test.starttest1.ExampleIFC.getSecret()";
+P 6;
+S "test/starttest1/ExampleIFC.java":0,0-0,0;
+B "test.starttest1.ExampleIFC.getSecret()Ljava/lang/String;":-1;
+Z 0;
+C "Application";
+HE 59;
+HE 60;
+HE 61;
+PS 59;
+PS 60;
+CF 61;
+CD 61;
+CE 59;
+CE 60;
+}
+EXIT 59 {
+O exit;
+V "test.starttest1.ExampleIFC.getSecret()";
+T "Ljava/lang/String";
+P 6;
+S "test/starttest1/ExampleIFC.java":0,0-0,0;
+B "<exit>":-2;
+Z 0;
+RF 244;
+PO 6;
+}
+FRMO 60 {
+O form-out;
+V "_exception_";
+T "Ljava/lang/Exception";
+P 6;
+S "test/starttest1/ExampleIFC.java":0,0-0,0;
+B "<exception>":-2;
+CF 59: "exc";
+PO 7;
+}
+NORM 61 {
+O compound;
+V "return #(TopSecret)";
+T "Ljava/lang/String";
+P 6;
+S "test/starttest1/ExampleIFC.java":11,0-11,0;
+B "test.starttest1.ExampleIFC.getSecret()Ljava/lang/String;":2;
+Z 0;
+CF 59;
+DD 59;
+}
+ENTR 63 {
+O entry;
+V "java.io.PrintStream.println(java.lang.String)";
+P 7;
+S "java/io/PrintStream.java":0,0-0,0;
+B "java.io.PrintStream.println(Ljava/lang/String;)V":-1;
+Z 0;
+C "Primordial";
+HE 64;
+HE 65;
+HE 66;
+HE 67;
+HE 68;
+HE 69;
+PS 65;
+PS 66;
+PS 67;
+CF 66;
+CD 68;
+CD 69;
+CE 64;
+CE 65;
+CE 66;
+CE 67;
+}
+EXIT 64 {
+O exit;
+V "java.io.PrintStream.println(java.lang.String)";
+T "V";
+P 7;
+S "java/io/PrintStream.java":0,0-0,0;
+B "<exit>":-2;
+Z 0;
+RF 245;
+}
+FRMO 65 {
+O form-out;
+V "_exception_";
+T "Ljava/lang/Exception";
+P 7;
+S "java/io/PrintStream.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+CF 64: "exc";
+PO 13;
+}
+FRMI 66 {
+O form-in;
+V "this";
+T "Ljava/io/PrintStream";
+P 7;
+S "java/io/PrintStream.java":0,0-0,0;
+B "<param> 0":-2;
+Z 0;
+LD ["null", "this"];
+CF 67;
+DD 68;
+DD 70;
+DD 74;
+DD 76;
+DD 79;
+}
+FRMI 67 {
+O form-in;
+V "param 1 $x ";
+T "Ljava/lang/String";
+P 7;
+S "java/io/PrintStream.java":0,0-0,0;
+B "<param> 1":-2;
+Z 0;
+LD ["x"];
+CF 68;
+DD 71;
+}
+SYNC 68 {
+O monitor;
+V "MONITORENTER p0 $this ";
+T "Ljava/lang/Object";
+P 7;
+S "java/io/PrintStream.java":738,0-738,0;
+B "java.io.PrintStream.println(Ljava/lang/String;)V":3;
+Z 0;
+LU ["this", "null"];
+CF 70;
+}
+CALL 69 {
+O call;
+V "p0 $this .print(p1 $x )";
+T "V";
+P 7;
+S "java/io/PrintStream.java":739,0-739,0;
+B "java.io.PrintStream.println(Ljava/lang/String;)V":6;
+Z 0;
+HE 70;
+HE 71;
+HE 72;
+PS 70;
+PS 71;
+PS 72;
+CF 247;
+CE 70;
+CE 71;
+CE 72;
+CE 247;
+CL 91: "virtual";
+}
+ACTI 70 {
+O act-in;
+V "this [p0 $this ]";
+T "Ljava/io/PrintStream";
+P 7;
+S "java/io/PrintStream.java":739,0-739,0;
+B "<param> 0":-2;
+Z 0;
+LU ["this", "null"];
+CF 71;
+CD 69;
+SU 72;
+PI 94;
+}
+ACTI 71 {
+O act-in;
+V "param 1 [p1 $x ]";
+T "Ljava/lang/String";
+P 7;
+S "java/io/PrintStream.java":739,0-739,0;
+B "<param> 1":-2;
+Z 0;
+LU ["x"];
+CF 69;
+SU 72;
+PI 95;
+}
+ACTO 72 {
+O act-out;
+V "ret _exception_ exc 20";
+T "Ljava/lang/Exception";
+P 7;
+S "java/io/PrintStream.java":739,0-739,0;
+B "<exception>":-2;
+Z 0;
+HE 247;
+CF 74;
+CF 78: "exc";
+CE 247;
+}
+CALL 73 {
+O call;
+V "p0 $this .newLine()";
+T "V";
+P 7;
+S "java/io/PrintStream.java":740,0-740,0;
+B "java.io.PrintStream.println(Ljava/lang/String;)V":10;
+Z 0;
+HE 74;
+HE 75;
+HE 200;
+HE 201;
+HE 202;
+HE 203;
+HE 204;
+HE 205;
+HE 206;
+PS 74;
+PS 75;
+CF 248;
+CE 74;
+CE 75;
+CE 200;
+CE 201;
+CE 202;
+CE 203;
+CE 204;
+CE 205;
+CE 206;
+CE 248;
+CL 108: "virtual";
+}
+ACTI 74 {
+O act-in;
+V "this [p0 $this ]";
+T "Ljava/io/PrintStream";
+P 7;
+S "java/io/PrintStream.java":740,0-740,0;
+B "<param> 0":-2;
+Z 0;
+LU ["this", "null"];
+PS 200;
+PS 201;
+PS 202;
+PS 203;
+PS 204;
+PS 205;
+PS 206;
+CF 200;
+CD 73;
+SU 75;
+SU 205;
+SU 206;
+PI 111;
+}
+ACTO 75 {
+O act-out;
+V "ret _exception_ exc 20";
+T "Ljava/lang/Exception";
+P 7;
+S "java/io/PrintStream.java":740,0-740,0;
+B "<exception>":-2;
+Z 0;
+HE 248;
+PS 204;
+PS 206;
+CF 76;
+CF 78: "exc";
+CE 248;
+}
+SYNC 76 {
+O monitor;
+V "MONITOREXIT p0 $this ";
+T "Ljava/lang/Object";
+P 7;
+S "java/io/PrintStream.java":741,0-741,0;
+B "java.io.PrintStream.println(Ljava/lang/String;)V":14;
+Z 0;
+LU ["this", "null"];
+CF 77;
+}
+NORM 77 {
+O compound;
+V "goto 23";
+T "Ljava/lang/Object";
+P 7;
+S "java/io/PrintStream.java":741,0-741,0;
+B "java.io.PrintStream.println(Ljava/lang/String;)V":15;
+Z 0;
+CF 81;
+}
+EXPR 78 {
+O assign;
+V "v6 = catch <exc>";
+T "Ljava/lang/Exception";
+P 7;
+S "java/io/PrintStream.java":0,0-0,0;
+Z 0;
+CF 79;
+DD 80;
+}
+SYNC 79 {
+O monitor;
+V "MONITOREXIT p0 $this ";
+T "Ljava/lang/Object";
+P 7;
+S "java/io/PrintStream.java":741,0-741,0;
+B "java.io.PrintStream.println(Ljava/lang/String;)V":20;
+Z 0;
+LU ["this", "null"];
+CF 80;
+}
+NORM 80 {
+O compound;
+V "throw v6";
+T "Ljava/lang/Exception";
+P 7;
+S "java/io/PrintStream.java":741,0-741,0;
+B "java.io.PrintStream.println(Ljava/lang/String;)V":22;
+Z 0;
+LU ["null"];
+CF 65: "exc";
+}
+NORM 81 {
+O compound;
+V "return";
+T "V";
+P 7;
+S "java/io/PrintStream.java":742,0-742,0;
+B "java.io.PrintStream.println(Ljava/lang/String;)V":23;
+Z 0;
+CF 64;
+}
+ENTR 91 {
+O entry;
+V "java.io.PrintStream.print(java.lang.String)";
+P 8;
+S "java/io/PrintStream.java":0,0-0,0;
+B "java.io.PrintStream.print(Ljava/lang/String;)V":-1;
+Z 0;
+C "Primordial";
+HE 92;
+HE 93;
+HE 94;
+HE 95;
+HE 96;
+HE 98;
+PS 93;
+PS 94;
+PS 95;
+CF 94;
+CD 96;
+CD 97;
+CD 98;
+CE 92;
+CE 93;
+CE 94;
+CE 95;
+}
+EXIT 92 {
+O exit;
+V "java.io.PrintStream.print(java.lang.String)";
+T "V";
+P 8;
+S "java/io/PrintStream.java":0,0-0,0;
+B "<exit>":-2;
+Z 0;
+RF 247;
+}
+FRMO 93 {
+O form-out;
+V "_exception_";
+T "Ljava/lang/Exception";
+P 8;
+S "java/io/PrintStream.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+CF 92: "exc";
+PO 72;
+}
+FRMI 94 {
+O form-in;
+V "this";
+T "Ljava/io/PrintStream";
+P 8;
+S "java/io/PrintStream.java":0,0-0,0;
+B "<param> 0":-2;
+Z 0;
+LD ["this"];
+CF 95;
+DD 99;
+}
+FRMI 95 {
+O form-in;
+V "param 1 $s ";
+T "Ljava/lang/String";
+P 8;
+S "java/io/PrintStream.java":0,0-0,0;
+B "<param> 1":-2;
+Z 0;
+LD ["s"];
+CF 96;
+DD 96;
+DD 97;
+}
+PRED 96 {
+O IF;
+V "if (p1 $s  != #(null)) goto 9";
+T "Z";
+P 8;
+S "java/io/PrintStream.java":599,0-599,0;
+B "java.io.PrintStream.print(Ljava/lang/String;)V":1;
+Z 0;
+LU ["s"];
+HE 97;
+CF 97;
+CD 97;
+}
+EXPR 97 {
+O assign;
+V "PHI v6 = p1 $s , #(null)";
+P 8;
+S "java/io/PrintStream.java":0,0-0,0;
+B "<phi>":-8;
+Z 0;
+LD ["s"];
+CF 99;
+DD 100;
+}
+CALL 98 {
+O call;
+V "p0 $this .write(v6)";
+T "V";
+P 8;
+S "java/io/PrintStream.java":602,0-602,0;
+B "java.io.PrintStream.print(Ljava/lang/String;)V":9;
+Z 0;
+U "java.io.PrintStream.write(Ljava/lang/String;)V";
+HE 99;
+HE 100;
+HE 101;
+HE 102;
+HE 223;
+HE 224;
+HE 236;
+PS 99;
+PS 100;
+PS 101;
+CF 236;
+CD 102;
+CE 99;
+CE 100;
+CE 101;
+CE 223;
+CE 224;
+CE 236;
+}
+ACTI 99 {
+O act-in;
+V "this [p0 $this ]";
+T "Ljava/io/PrintStream";
+P 8;
+S "java/io/PrintStream.java":602,0-602,0;
+B "<param> 0":-2;
+Z 0;
+LU ["this"];
+PS 223;
+PS 224;
+CF 100;
+CD 98;
+DD 236;
+}
+ACTI 100 {
+O act-in;
+V "param 1 [v6]";
+T "Ljava/lang/String";
+P 8;
+S "java/io/PrintStream.java":602,0-602,0;
+B "<param> 1":-2;
+Z 0;
+LU ["s"];
+PS 223;
+PS 224;
+CF 223;
+DD 236;
+}
+ACTO 101 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 8;
+S "java/io/PrintStream.java":602,0-602,0;
+B "<exception>":-2;
+Z 0;
+PS 223;
+PS 224;
+CF 93: "exc";
+DD 93;
+}
+NORM 102 {
+O compound;
+V "return";
+T "V";
+P 8;
+S "java/io/PrintStream.java":603,0-603,0;
+B "java.io.PrintStream.print(Ljava/lang/String;)V":12;
+Z 0;
+CF 92;
+}
+ENTR 108 {
+O entry;
+V "java.io.PrintStream.newLine()";
+P 9;
+S "java/io/PrintStream.java":0,0-0,0;
+B "java.io.PrintStream.newLine()V":-1;
+Z 0;
+C "Primordial";
+HE 109;
+HE 110;
+HE 111;
+HE 112;
+HE 113;
+HE 180;
+HE 181;
+HE 182;
+HE 183;
+HE 184;
+HE 185;
+HE 186;
+PS 110;
+PS 111;
+CF 180;
+CD 112;
+CD 113;
+CE 109;
+CE 110;
+CE 111;
+CE 180;
+CE 181;
+CE 182;
+CE 183;
+CE 184;
+CE 185;
+CE 186;
+}
+EXIT 109 {
+O exit;
+V "java.io.PrintStream.newLine()";
+T "V";
+P 9;
+S "java/io/PrintStream.java":0,0-0,0;
+B "<exit>":-2;
+Z 0;
+RF 248;
+}
+FRMO 110 {
+O form-out;
+V "_exception_";
+T "Ljava/lang/Exception";
+P 9;
+S "java/io/PrintStream.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+PS 184;
+PS 186;
+CF 185: "exc";
+PO 75;
+}
+FRMI 111 {
+O form-in;
+V "this";
+T "Ljava/io/PrintStream";
+P 9;
+S "java/io/PrintStream.java":0,0-0,0;
+B "<param> 0":-2;
+Z 0;
+LD ["null", "this"];
+PS 180;
+PS 181;
+PS 182;
+PS 183;
+PS 184;
+PS 185;
+PS 186;
+CF 112;
+DD 112;
+DD 114;
+DD 117;
+DD 123;
+DD 129;
+DD 135;
+DD 139;
+DD 144;
+DD 147;
+DD 160;
+}
+SYNC 112 {
+O monitor;
+V "MONITORENTER p0 $this ";
+T "Ljava/lang/Object";
+P 9;
+S "java/io/PrintStream.java":474,0-474,0;
+B "java.io.PrintStream.newLine()V":3;
+Z 0;
+LU ["this", "null"];
+CF 114;
+}
+CALL 113 {
+O call;
+V "p0 $this .ensureOpen()";
+T "V";
+P 9;
+S "java/io/PrintStream.java":475,0-475,0;
+B "java.io.PrintStream.newLine()V":5;
+Z 0;
+U "java.io.PrintStream.ensureOpen()V";
+HE 114;
+HE 115;
+HE 117;
+HE 119;
+HE 187;
+HE 188;
+HE 237;
+PS 114;
+PS 115;
+CF 237;
+CD 117;
+CD 119;
+CD 146;
+CD 147;
+CD 148;
+CE 114;
+CE 115;
+CE 187;
+CE 188;
+CE 237;
+}
+ACTI 114 {
+O act-in;
+V "this [p0 $this ]";
+T "Ljava/io/PrintStream";
+P 9;
+S "java/io/PrintStream.java":475,0-475,0;
+B "<param> 0":-2;
+Z 0;
+LU ["this", "null"];
+PS 187;
+PS 188;
+CF 187;
+CD 113;
+DD 237;
+}
+ACTO 115 {
+O act-out;
+V "ret _exception_ exc 50";
+T "Ljava/lang/Exception";
+P 9;
+S "java/io/PrintStream.java":475,0-475,0;
+B "<exception>":-2;
+Z 0;
+PS 187;
+PS 188;
+CF 117;
+CF 146: "exc";
+}
+EXPR 116 {
+O reference;
+V "v4 = p0 $this .textOut";
+T "Ljava/io/BufferedWriter";
+P 9;
+S "java/io/PrintStream.java":476,0-476,0;
+B "java.io.PrintStream.newLine()V":9;
+Z 0;
+LU ["this", "null"];
+HE 118;
+CF 117;
+CE 118;
+DD 120;
+}
+NORM 117 {
+O compound;
+V "base";
+T "Ljava/io/PrintStream";
+P 9;
+S "java/io/PrintStream.java":476,0-476,0;
+B "<base>":-6;
+Z 0;
+HE 116;
+PS 118;
+CF 118;
+CF 120;
+CE 116;
+DD 116;
+}
+NORM 118 {
+O compound;
+V "field textOut";
+T "Ljava/io/BufferedWriter";
+P 9;
+S "java/io/PrintStream.java":476,0-476,0;
+B "Ljava/io/PrintStream.textOut":-4;
+Z 0;
+CF 116;
+DD 116;
+}
+CALL 119 {
+O call;
+V "v4.newLine()";
+T "V";
+P 9;
+S "java/io/PrintStream.java":476,0-476,0;
+B "java.io.PrintStream.newLine()V":12;
+Z 0;
+U "java.io.BufferedWriter.newLine()V";
+HE 120;
+HE 121;
+HE 123;
+HE 125;
+HE 189;
+HE 190;
+HE 238;
+PS 120;
+PS 121;
+CF 238;
+CD 123;
+CD 125;
+CD 146;
+CD 147;
+CD 148;
+CE 120;
+CE 121;
+CE 189;
+CE 190;
+CE 238;
+}
+ACTI 120 {
+O act-in;
+V "this [v4]";
+T "Ljava/io/BufferedWriter";
+P 9;
+S "java/io/PrintStream.java":476,0-476,0;
+B "<param> 0":-2;
+Z 0;
+PS 189;
+PS 190;
+CF 189;
+CD 119;
+DD 238;
+}
+ACTO 121 {
+O act-out;
+V "ret _exception_ exc 50";
+T "Ljava/lang/Exception";
+P 9;
+S "java/io/PrintStream.java":476,0-476,0;
+B "<exception>":-2;
+Z 0;
+PS 189;
+PS 190;
+CF 123;
+CF 146: "exc";
+}
+EXPR 122 {
+O reference;
+V "v6 = p0 $this .textOut";
+T "Ljava/io/BufferedWriter";
+P 9;
+S "java/io/PrintStream.java":477,0-477,0;
+B "java.io.PrintStream.newLine()V":16;
+Z 0;
+LU ["this", "null"];
+HE 124;
+CF 123;
+CE 124;
+DD 126;
+}
+NORM 123 {
+O compound;
+V "base";
+T "Ljava/io/PrintStream";
+P 9;
+S "java/io/PrintStream.java":477,0-477,0;
+B "<base>":-6;
+Z 0;
+HE 122;
+PS 124;
+CF 124;
+CF 126;
+CE 122;
+DD 122;
+}
+NORM 124 {
+O compound;
+V "field textOut";
+T "Ljava/io/BufferedWriter";
+P 9;
+S "java/io/PrintStream.java":477,0-477,0;
+B "Ljava/io/PrintStream.textOut":-4;
+Z 0;
+CF 122;
+DD 122;
+}
+CALL 125 {
+O call;
+V "v6.flushBuffer()";
+T "V";
+P 9;
+S "java/io/PrintStream.java":477,0-477,0;
+B "java.io.PrintStream.newLine()V":19;
+Z 0;
+U "java.io.BufferedWriter.flushBuffer()V";
+HE 126;
+HE 127;
+HE 129;
+HE 131;
+HE 191;
+HE 192;
+HE 239;
+PS 126;
+PS 127;
+CF 239;
+CD 129;
+CD 131;
+CD 146;
+CD 147;
+CD 148;
+CE 126;
+CE 127;
+CE 191;
+CE 192;
+CE 239;
+}
+ACTI 126 {
+O act-in;
+V "this [v6]";
+T "Ljava/io/BufferedWriter";
+P 9;
+S "java/io/PrintStream.java":477,0-477,0;
+B "<param> 0":-2;
+Z 0;
+PS 191;
+PS 192;
+CF 191;
+CD 125;
+DD 239;
+}
+ACTO 127 {
+O act-out;
+V "ret _exception_ exc 50";
+T "Ljava/lang/Exception";
+P 9;
+S "java/io/PrintStream.java":477,0-477,0;
+B "<exception>":-2;
+Z 0;
+PS 191;
+PS 192;
+CF 129;
+CF 146: "exc";
+}
+EXPR 128 {
+O reference;
+V "v8 = p0 $this .charOut";
+T "Ljava/io/OutputStreamWriter";
+P 9;
+S "java/io/PrintStream.java":478,0-478,0;
+B "java.io.PrintStream.newLine()V":23;
+Z 0;
+LU ["this", "null"];
+HE 130;
+CF 129;
+CE 130;
+DD 132;
+}
+NORM 129 {
+O compound;
+V "base";
+T "Ljava/io/PrintStream";
+P 9;
+S "java/io/PrintStream.java":478,0-478,0;
+B "<base>":-6;
+Z 0;
+HE 128;
+PS 130;
+CF 130;
+CF 132;
+CE 128;
+DD 128;
+}
+NORM 130 {
+O compound;
+V "field charOut";
+T "Ljava/io/OutputStreamWriter";
+P 9;
+S "java/io/PrintStream.java":478,0-478,0;
+B "Ljava/io/PrintStream.charOut":-4;
+Z 0;
+CF 128;
+DD 128;
+}
+CALL 131 {
+O call;
+V "v8.flushBuffer()";
+T "V";
+P 9;
+S "java/io/PrintStream.java":478,0-478,0;
+B "java.io.PrintStream.newLine()V":26;
+Z 0;
+U "java.io.OutputStreamWriter.flushBuffer()V";
+HE 132;
+HE 133;
+HE 135;
+HE 137;
+HE 193;
+HE 240;
+PS 132;
+PS 133;
+CF 240;
+CD 135;
+CD 137;
+CD 146;
+CD 147;
+CD 148;
+CE 132;
+CE 133;
+CE 193;
+CE 240;
+}
+ACTI 132 {
+O act-in;
+V "this [v8]";
+T "Ljava/io/OutputStreamWriter";
+P 9;
+S "java/io/PrintStream.java":478,0-478,0;
+B "<param> 0":-2;
+Z 0;
+PS 193;
+CF 193;
+CD 131;
+DD 240;
+}
+ACTO 133 {
+O act-out;
+V "ret _exception_ exc 50";
+T "Ljava/lang/Exception";
+P 9;
+S "java/io/PrintStream.java":478,0-478,0;
+B "<exception>":-2;
+Z 0;
+PS 193;
+CF 135;
+CF 146: "exc";
+}
+EXPR 134 {
+O reference;
+V "v10 = p0 $this .autoFlush";
+T "Z";
+P 9;
+S "java/io/PrintStream.java":479,0-479,0;
+B "java.io.PrintStream.newLine()V":30;
+Z 0;
+LU ["this", "null"];
+HE 136;
+CF 135;
+CE 136;
+DD 137;
+}
+NORM 135 {
+O compound;
+V "base";
+T "Ljava/io/PrintStream";
+P 9;
+S "java/io/PrintStream.java":479,0-479,0;
+B "<base>":-6;
+Z 0;
+HE 134;
+PS 136;
+CF 136;
+CF 137;
+CE 134;
+DD 134;
+}
+NORM 136 {
+O compound;
+V "field autoFlush";
+T "Z";
+P 9;
+S "java/io/PrintStream.java":479,0-479,0;
+B "Ljava/io/PrintStream.autoFlush":-4;
+Z 0;
+CF 134;
+DD 134;
+}
+PRED 137 {
+O IF;
+V "if (v10 == #(0)) goto 37";
+T "Z";
+P 9;
+S "java/io/PrintStream.java":479,0-479,0;
+B "java.io.PrintStream.newLine()V":33;
+Z 0;
+HE 139;
+HE 141;
+CF 139;
+CF 144;
+CD 139;
+CD 141;
+CD 144;
+CD 145;
+CD 149;
+CD 162;
+}
+EXPR 138 {
+O reference;
+V "v12 = p0 $this .out";
+T "Ljava/io/OutputStream";
+P 9;
+S "java/io/PrintStream.java":480,0-480,0;
+B "java.io.PrintStream.newLine()V":37;
+Z 0;
+LU ["this", "null"];
+HE 140;
+CF 139;
+CE 140;
+DD 142;
+}
+NORM 139 {
+O compound;
+V "base";
+T "Ljava/io/FilterOutputStream";
+P 9;
+S "java/io/PrintStream.java":480,0-480,0;
+B "<base>":-6;
+Z 0;
+HE 138;
+PS 140;
+CF 140;
+CF 142;
+CE 138;
+DD 138;
+}
+NORM 140 {
+O compound;
+V "field out";
+T "Ljava/io/OutputStream";
+P 9;
+S "java/io/PrintStream.java":480,0-480,0;
+B "Ljava/io/FilterOutputStream.out":-4;
+Z 0;
+CF 138;
+DD 138;
+}
+CALL 141 {
+O call;
+V "v12.flush()";
+T "V";
+P 9;
+S "java/io/PrintStream.java":480,0-480,0;
+B "java.io.PrintStream.newLine()V":40;
+Z 0;
+U "java.io.OutputStream.flush()V";
+HE 142;
+HE 143;
+HE 144;
+HE 145;
+HE 146;
+HE 147;
+HE 148;
+HE 149;
+HE 194;
+HE 195;
+HE 241;
+PS 142;
+PS 143;
+CF 241;
+CD 144;
+CD 145;
+CD 146;
+CD 147;
+CD 148;
+CD 149;
+CD 162;
+CE 142;
+CE 143;
+CE 194;
+CE 195;
+CE 241;
+}
+ACTI 142 {
+O act-in;
+V "this [v12]";
+T "Ljava/io/OutputStream";
+P 9;
+S "java/io/PrintStream.java":480,0-480,0;
+B "<param> 0":-2;
+Z 0;
+PS 194;
+PS 195;
+CF 194;
+CD 141;
+DD 241;
+}
+ACTO 143 {
+O act-out;
+V "ret _exception_ exc 50";
+T "Ljava/lang/Exception";
+P 9;
+S "java/io/PrintStream.java":480,0-480,0;
+B "<exception>":-2;
+Z 0;
+PS 194;
+PS 195;
+CF 144;
+CF 146: "exc";
+}
+SYNC 144 {
+O monitor;
+V "MONITOREXIT p0 $this ";
+T "Ljava/lang/Object";
+P 9;
+S "java/io/PrintStream.java":481,0-481,0;
+B "java.io.PrintStream.newLine()V":44;
+Z 0;
+LU ["this", "null"];
+CF 145;
+}
+NORM 145 {
+O compound;
+V "goto 53";
+T "Ljava/lang/Object";
+P 9;
+S "java/io/PrintStream.java":481,0-481,0;
+B "java.io.PrintStream.newLine()V":45;
+Z 0;
+CF 149;
+}
+EXPR 146 {
+O assign;
+V "v14 = catch <exc>";
+T "Ljava/lang/Exception";
+P 9;
+S "java/io/PrintStream.java":0,0-0,0;
+Z 0;
+CF 147;
+DD 148;
+}
+SYNC 147 {
+O monitor;
+V "MONITOREXIT p0 $this  exc 50";
+T "Ljava/lang/Object";
+P 9;
+S "java/io/PrintStream.java":481,0-481,0;
+B "java.io.PrintStream.newLine()V":50;
+Z 0;
+LU ["this", "null"];
+CF 146: "exc";
+CF 148;
+CD 146;
+}
+NORM 148 {
+O compound;
+V "throw v14 exc 57 exc 69";
+T "Ljava/lang/Exception";
+P 9;
+S "java/io/PrintStream.java":481,0-481,0;
+B "java.io.PrintStream.newLine()V":52;
+Z 0;
+LU ["null"];
+HE 150;
+HE 151;
+HE 158;
+HE 160;
+CF 110: "exc";
+CF 150: "exc";
+CF 158: "exc";
+CD 110;
+CD 150;
+CD 151;
+CD 158;
+CD 160;
+CD 162;
+}
+NORM 149 {
+O compound;
+V "goto 72";
+T "Ljava/lang/Object";
+P 9;
+S "java/io/PrintStream.java":488,0-488,0;
+B "java.io.PrintStream.newLine()V":53;
+Z 0;
+CF 162;
+}
+EXPR 150 {
+O assign;
+V "v17 = catch <exc>";
+T "Ljava/lang/Exception";
+P 9;
+S "java/io/PrintStream.java":0,0-0,0;
+Z 0;
+LD ["x"];
+CF 196;
+}
+CALL 151 {
+O call;
+V "v19 = currentThread()";
+T "Ljava/lang/Thread";
+P 9;
+S "java/io/PrintStream.java":484,0-484,0;
+B "java.io.PrintStream.newLine()V":57;
+Z 0;
+U "java.lang.Thread.currentThread()Ljava/lang/Thread;";
+HE 152;
+HE 153;
+HE 154;
+HE 196;
+HE 197;
+HE 242;
+PS 152;
+PS 153;
+CF 242;
+CD 154;
+CE 152;
+CE 153;
+CE 196;
+CE 197;
+CE 242;
+}
+ACTO 152 {
+O act-out;
+V "ret 0";
+T "Ljava/lang/Thread";
+P 9;
+S "java/io/PrintStream.java":484,0-484,0;
+B "<exit>":-2;
+Z 0;
+PS 196;
+PS 197;
+CF 153: "exc";
+CF 155;
+DD 155;
+}
+ACTO 153 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 9;
+S "java/io/PrintStream.java":484,0-484,0;
+B "<exception>":-2;
+Z 0;
+PS 196;
+PS 197;
+CF 110: "exc";
+DD 110;
+}
+CALL 154 {
+O call;
+V "v19.interrupt()";
+T "V";
+P 9;
+S "java/io/PrintStream.java":484,0-484,0;
+B "java.io.PrintStream.newLine()V":60;
+Z 0;
+U "java.lang.Thread.interrupt()V";
+HE 155;
+HE 156;
+HE 157;
+HE 162;
+HE 198;
+HE 199;
+HE 243;
+PS 155;
+PS 156;
+CF 243;
+CD 157;
+CD 162;
+CE 155;
+CE 156;
+CE 198;
+CE 199;
+CE 243;
+}
+ACTI 155 {
+O act-in;
+V "this [v19]";
+T "Ljava/lang/Thread";
+P 9;
+S "java/io/PrintStream.java":484,0-484,0;
+B "<param> 0":-2;
+Z 0;
+PS 198;
+PS 199;
+CF 198;
+CD 154;
+DD 243;
+}
+ACTO 156 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 9;
+S "java/io/PrintStream.java":484,0-484,0;
+B "<exception>":-2;
+Z 0;
+PS 198;
+PS 199;
+CF 110: "exc";
+DD 110;
+}
+NORM 157 {
+O compound;
+V "goto 72";
+T "Ljava/lang/Object";
+P 9;
+S "java/io/PrintStream.java":488,0-488,0;
+B "java.io.PrintStream.newLine()V":63;
+Z 0;
+CF 162;
+}
+EXPR 158 {
+O assign;
+V "v15 = catch <exc>";
+T "Ljava/lang/Exception";
+P 9;
+S "java/io/PrintStream.java":0,0-0,0;
+Z 0;
+LD ["x"];
+CF 160;
+}
+EXPR 159 {
+O modify;
+V "p0 $this .trouble = #(1)";
+T "Z";
+P 9;
+S "java/io/PrintStream.java":487,0-487,0;
+B "java.io.PrintStream.newLine()V":69;
+Z 0;
+LU ["this"];
+HE 161;
+CF 161;
+CE 161;
+DD 161;
+}
+NORM 160 {
+O compound;
+V "base";
+T "Ljava/io/PrintStream";
+P 9;
+S "java/io/PrintStream.java":487,0-487,0;
+B "<base>":-6;
+Z 0;
+HE 159;
+PS 161;
+CF 159;
+CF 162;
+CE 159;
+DD 159;
+}
+NORM 161 {
+O compound;
+V "field trouble";
+T "Z";
+P 9;
+S "java/io/PrintStream.java":487,0-487,0;
+B "Ljava/io/PrintStream.trouble":-4;
+Z 0;
+CF 160;
+DH 185;
+}
+NORM 162 {
+O compound;
+V "return";
+T "V";
+P 9;
+S "java/io/PrintStream.java":489,0-489,0;
+B "java.io.PrintStream.newLine()V":72;
+Z 0;
+CF 185;
+}
+FRMI 178 {
+O form-in;
+V "out";
+T "Ljava/io/PrintStream";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "Ljava/lang/System.out":-3;
+Z 0;
+PS 209;
+PS 210;
+CF 211;
+DD 179;
+}
+ACTI 179 {
+O act-in;
+V "out";
+T "Ljava/io/PrintStream";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "Ljava/lang/System.out":-3;
+Z 0;
+PS 214;
+PS 215;
+CF 214;
+SU 36;
+PI 15;
+}
+FRMI 180 {
+O form-in;
+V "[R] |0|UNIQ(textOut)";
+T "Ljava/io/BufferedWriter";
+P 9;
+S "java/io/PrintStream.java":0,0-0,0;
+B "Ljava/io/PrintStream.textOut":-4;
+Z 0;
+PS 184;
+PS 186;
+CF 181;
+DH 118;
+DH 124;
+}
+FRMI 181 {
+O form-in;
+V "[R] |0|UNIQ(charOut)";
+T "Ljava/io/OutputStreamWriter";
+P 9;
+S "java/io/PrintStream.java":0,0-0,0;
+B "Ljava/io/PrintStream.charOut":-4;
+Z 0;
+PS 184;
+PS 186;
+CF 182;
+DH 130;
+}
+FRMI 182 {
+O form-in;
+V "[R] |0|UNIQ(autoFlush)";
+T "Z";
+P 9;
+S "java/io/PrintStream.java":0,0-0,0;
+B "Ljava/io/PrintStream.autoFlush":-4;
+Z 0;
+CF 183;
+DH 136;
+}
+FRMI 183 {
+O form-in;
+V "[R] |0|UNIQ(out)";
+T "Ljava/io/OutputStream";
+P 9;
+S "java/io/PrintStream.java":0,0-0,0;
+B "Ljava/io/FilterOutputStream.out":-4;
+Z 0;
+PS 184;
+PS 186;
+CF 184;
+DH 140;
+DH 187;
+}
+FRMI 184 {
+O form-in;
+V "[MR] |136|MERGE *";
+T "?unknown?";
+P 9;
+S "java/io/PrintStream.java":0,0-0,0;
+B "<???>":-4;
+Z 0;
+PS 180;
+PS 181;
+PS 182;
+PS 183;
+PS 185;
+PS 186;
+PE 186;
+CF 111;
+DH 186;
+DH 187;
+DH 189;
+DH 191;
+DH 193;
+DH 194;
+DH 196;
+DH 198;
+}
+FRMO 185 {
+O form-out;
+V "[M] |0|UNIQ(trouble)";
+T "Z";
+P 9;
+S "java/io/PrintStream.java":0,0-0,0;
+B "Ljava/io/PrintStream.trouble":-4;
+Z 0;
+CF 186;
+PO 205;
+}
+FRMO 186 {
+O form-out;
+V "[MR] |136|MERGE *";
+T "?unknown?";
+P 9;
+S "java/io/PrintStream.java":0,0-0,0;
+B "<???>":-4;
+Z 0;
+PS 180;
+PS 181;
+PS 182;
+PS 183;
+PS 184;
+PS 185;
+PE 184;
+CF 109;
+PO 206;
+}
+ACTI 187 {
+O act-in;
+V "[MR] |136|MERGE *";
+T "?unknown?";
+P 9;
+S "java/io/PrintStream.java":475,0-475,0;
+B "<???>":-4;
+Z 0;
+PS 188;
+PE 188;
+CF 113;
+DD 237;
+}
+ACTO 188 {
+O act-out;
+V "[MR] |136|MERGE *";
+T "?unknown?";
+P 9;
+S "java/io/PrintStream.java":475,0-475,0;
+B "<???>":-4;
+Z 0;
+PS 187;
+PE 187;
+CF 115;
+DH 140;
+DH 186;
+DH 189;
+DH 191;
+DH 193;
+DH 194;
+DH 196;
+DH 198;
+}
+ACTI 189 {
+O act-in;
+V "[MR] |136|MERGE *";
+T "?unknown?";
+P 9;
+S "java/io/PrintStream.java":476,0-476,0;
+B "<???>":-4;
+Z 0;
+PS 190;
+PE 190;
+CF 119;
+DD 238;
+}
+ACTO 190 {
+O act-out;
+V "[MR] |136|MERGE *";
+T "?unknown?";
+P 9;
+S "java/io/PrintStream.java":476,0-476,0;
+B "<???>":-4;
+Z 0;
+PS 189;
+PE 189;
+CF 121;
+DH 186;
+DH 191;
+DH 193;
+DH 194;
+DH 196;
+DH 198;
+}
+ACTI 191 {
+O act-in;
+V "[MR] |136|MERGE *";
+T "?unknown?";
+P 9;
+S "java/io/PrintStream.java":477,0-477,0;
+B "<???>":-4;
+Z 0;
+PS 192;
+PE 192;
+CF 125;
+DD 239;
+}
+ACTO 192 {
+O act-out;
+V "[MR] |136|MERGE *";
+T "?unknown?";
+P 9;
+S "java/io/PrintStream.java":477,0-477,0;
+B "<???>":-4;
+Z 0;
+PS 191;
+PE 191;
+CF 127;
+DH 186;
+DH 193;
+DH 194;
+DH 196;
+DH 198;
+}
+ACTI 193 {
+O act-in;
+V "[R] |136|MERGE *";
+T "?unknown?";
+P 9;
+S "java/io/PrintStream.java":478,0-478,0;
+B "<???>":-4;
+Z 0;
+CF 131;
+DD 240;
+}
+ACTI 194 {
+O act-in;
+V "[MR] |136|MERGE *";
+T "?unknown?";
+P 9;
+S "java/io/PrintStream.java":480,0-480,0;
+B "<???>":-4;
+Z 0;
+PS 195;
+PE 195;
+CF 141;
+DD 241;
+}
+ACTO 195 {
+O act-out;
+V "[MR] |136|MERGE *";
+T "?unknown?";
+P 9;
+S "java/io/PrintStream.java":480,0-480,0;
+B "<???>":-4;
+Z 0;
+PS 194;
+PE 194;
+CF 143;
+DH 186;
+DH 196;
+DH 198;
+}
+ACTI 196 {
+O act-in;
+V "[MR] |136|MERGE *";
+T "?unknown?";
+P 9;
+S "java/io/PrintStream.java":484,0-484,0;
+B "<???>":-4;
+Z 0;
+PS 197;
+PE 197;
+CF 151;
+DD 242;
+}
+ACTO 197 {
+O act-out;
+V "[MR] |136|MERGE *";
+T "?unknown?";
+P 9;
+S "java/io/PrintStream.java":484,0-484,0;
+B "<???>":-4;
+Z 0;
+PS 196;
+PE 196;
+CF 152;
+DH 186;
+DH 198;
+}
+ACTI 198 {
+O act-in;
+V "[MR] |136|MERGE *";
+T "?unknown?";
+P 9;
+S "java/io/PrintStream.java":484,0-484,0;
+B "<???>":-4;
+Z 0;
+PS 199;
+PE 199;
+CF 154;
+DD 243;
+}
+ACTO 199 {
+O act-out;
+V "[MR] |136|MERGE *";
+T "?unknown?";
+P 9;
+S "java/io/PrintStream.java":484,0-484,0;
+B "<???>":-4;
+Z 0;
+PS 198;
+PE 198;
+CF 156: "exc";
+CF 157;
+DH 186;
+}
+ACTI 200 {
+O act-in;
+V "[R] |0|UNIQ(textOut)";
+T "Ljava/io/BufferedWriter";
+P 7;
+S "java/io/PrintStream.java":740,0-740,0;
+B "Ljava/io/PrintStream.textOut":-4;
+Z 0;
+PS 204;
+PS 206;
+CF 201;
+SU 75;
+SU 205;
+SU 206;
+PI 180;
+}
+ACTI 201 {
+O act-in;
+V "[R] |0|UNIQ(charOut)";
+T "Ljava/io/OutputStreamWriter";
+P 7;
+S "java/io/PrintStream.java":740,0-740,0;
+B "Ljava/io/PrintStream.charOut":-4;
+Z 0;
+PS 204;
+PS 206;
+CF 202;
+SU 75;
+SU 205;
+SU 206;
+PI 181;
+}
+ACTI 202 {
+O act-in;
+V "[R] |0|UNIQ(autoFlush)";
+T "Z";
+P 7;
+S "java/io/PrintStream.java":740,0-740,0;
+B "Ljava/io/PrintStream.autoFlush":-4;
+Z 0;
+CF 203;
+SU 75;
+SU 205;
+SU 206;
+PI 182;
+}
+ACTI 203 {
+O act-in;
+V "[R] |0|UNIQ(out)";
+T "Ljava/io/OutputStream";
+P 7;
+S "java/io/PrintStream.java":740,0-740,0;
+B "Ljava/io/FilterOutputStream.out":-4;
+Z 0;
+PS 204;
+PS 206;
+CF 204;
+SU 75;
+SU 205;
+SU 206;
+PI 183;
+}
+ACTI 204 {
+O act-in;
+V "[MR] |136|MERGE *";
+T "?unknown?";
+P 7;
+S "java/io/PrintStream.java":740,0-740,0;
+B "<???>":-4;
+Z 0;
+PS 200;
+PS 201;
+PS 202;
+PS 203;
+PS 205;
+PS 206;
+PE 206;
+CF 73;
+SU 75;
+SU 205;
+SU 206;
+PI 184;
+}
+ACTO 205 {
+O act-out;
+V "[M] |0|UNIQ(trouble)";
+T "Z";
+P 7;
+S "java/io/PrintStream.java":740,0-740,0;
+B "Ljava/io/PrintStream.trouble":-4;
+Z 0;
+CF 206;
+}
+ACTO 206 {
+O act-out;
+V "[MR] |136|MERGE *";
+T "?unknown?";
+P 7;
+S "java/io/PrintStream.java":740,0-740,0;
+B "<???>":-4;
+Z 0;
+PS 200;
+PS 201;
+PS 202;
+PS 203;
+PS 204;
+PS 205;
+PE 204;
+CF 75;
+}
+FRMI 207 {
+O form-in;
+V "[MR] |136|MERGE *";
+T "?unknown?";
+P 4;
+S "test/starttest1/ExampleIFC.java":0,0-0,0;
+B "<???>":-4;
+Z 0;
+PS 208;
+PE 208;
+CF 4;
+DH 208;
+}
+FRMO 208 {
+O form-out;
+V "[MR] |136|MERGE *";
+T "?unknown?";
+P 4;
+S "test/starttest1/ExampleIFC.java":0,0-0,0;
+B "<???>":-4;
+Z 0;
+PS 207;
+PE 207;
+CF 2;
+PO 215;
+}
+FRMI 209 {
+O form-in;
+V "[MR] |136|MERGE *";
+T "?unknown?";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<???>":-4;
+Z 0;
+PS 210;
+PE 210;
+CF 178;
+DH 210;
+DH 211;
+DH 214;
+DH 217;
+DH 219;
+DH 221;
+}
+FRMO 210 {
+O form-out;
+V "[MR] |136|MERGE *";
+T "?unknown?";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<???>":-4;
+Z 0;
+PS 209;
+PE 209;
+CF 19;
+}
+ACTI 211 {
+O act-in;
+V "[MR] |136|MERGE *";
+T "?unknown?";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<???>":-4;
+Z 0;
+PS 212;
+PE 212;
+CF 21;
+DD 227;
+}
+ACTO 212 {
+O act-out;
+V "[MR] |136|MERGE *";
+T "?unknown?";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<???>":-4;
+Z 0;
+PS 211;
+PE 211;
+CF 22: "exc";
+CF 23;
+DH 210;
+DH 214;
+DH 217;
+DH 219;
+DH 221;
+}
+ACTO 213 {
+O act-out;
+V "[M] |136|MERGE *";
+T "?unknown?";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<???>":-4;
+Z 0;
+CF 33: "exc";
+CF 35;
+DD 225;
+DH 210;
+DH 214;
+DH 219;
+DH 221;
+}
+ACTI 214 {
+O act-in;
+V "[MR] |136|MERGE *";
+T "?unknown?";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<???>":-4;
+Z 0;
+PS 215;
+PE 215;
+CF 34;
+SU 215;
+PI 207;
+}
+ACTO 215 {
+O act-out;
+V "[MR] |136|MERGE *";
+T "?unknown?";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<???>":-4;
+Z 0;
+PS 214;
+PE 214;
+CF 36: "exc";
+CF 37;
+DH 210;
+DH 219;
+DH 221;
+}
+ACTO 216 {
+O act-out;
+V "[M] |136|MERGE *";
+T "?unknown?";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<???>":-4;
+Z 0;
+CF 40: "exc";
+CF 42;
+DH 210;
+DH 219;
+DH 221;
+}
+ACTI 217 {
+O act-in;
+V "[R] |136|MERGE *";
+T "?unknown?";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<???>":-4;
+Z 0;
+CF 41;
+DD 231;
+}
+ACTO 218 {
+O act-out;
+V "[M] |136|MERGE *";
+T "?unknown?";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<???>":-4;
+Z 0;
+CF 47: "exc";
+CF 49;
+DH 210;
+DH 219;
+DH 221;
+}
+ACTI 219 {
+O act-in;
+V "[R] |136|MERGE *";
+T "?unknown?";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<???>":-4;
+Z 0;
+CF 48;
+DD 233;
+}
+ACTO 220 {
+O act-out;
+V "[M] |136|MERGE *";
+T "?unknown?";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<???>":-4;
+Z 0;
+CF 54: "exc";
+CF 56;
+DD 226;
+DH 210;
+DH 221;
+}
+ACTI 221 {
+O act-in;
+V "[MR] |136|MERGE *";
+T "?unknown?";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<???>":-4;
+Z 0;
+PS 222;
+PE 222;
+CF 55;
+DD 235;
+}
+ACTO 222 {
+O act-out;
+V "[MR] |136|MERGE *";
+T "?unknown?";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<???>":-4;
+Z 0;
+PS 221;
+PE 221;
+CF 57: "exc";
+CF 210;
+DH 210;
+}
+ACTI 223 {
+O act-in;
+V "[MR] |136|MERGE *";
+T "?unknown?";
+P 8;
+S "java/io/PrintStream.java":602,0-602,0;
+B "<???>":-4;
+Z 0;
+PS 224;
+PE 224;
+CF 98;
+DD 236;
+}
+ACTO 224 {
+O act-out;
+V "[MR] |136|MERGE *";
+T "?unknown?";
+P 8;
+S "java/io/PrintStream.java":602,0-602,0;
+B "<???>":-4;
+Z 0;
+PS 223;
+PE 223;
+CF 101: "exc";
+CF 102;
+}
+NORM 225 {
+O compound;
+V "immutable";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+CF 213;
+DD 25;
+}
+NORM 226 {
+O compound;
+V "immutable";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+CF 220;
+DD 51;
+}
+NORM 227 {
+O compound;
+V "many2many";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+CF 212;
+DD 22;
+DD 212;
+}
+NORM 228 {
+O compound;
+V "many2many";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+CF 25;
+DD 24;
+}
+NORM 229 {
+O compound;
+V "many2many";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+CF 225;
+DD 33;
+DD 213;
+}
+NORM 230 {
+O compound;
+V "many2many";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+CF 216;
+DD 40;
+DD 216;
+}
+NORM 231 {
+O compound;
+V "many2many";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+CF 44;
+DD 43;
+}
+NORM 232 {
+O compound;
+V "many2many";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+CF 218;
+DD 47;
+DD 218;
+}
+NORM 233 {
+O compound;
+V "many2many";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+CF 51;
+DD 50;
+}
+NORM 234 {
+O compound;
+V "many2many";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+CF 226;
+DD 54;
+DD 220;
+}
+NORM 235 {
+O compound;
+V "many2many";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+CF 222;
+DD 57;
+DD 222;
+}
+NORM 236 {
+O compound;
+V "many2many";
+P 8;
+S "java/io/PrintStream.java":0,0-0,0;
+B "java.io.PrintStream.print(Ljava/lang/String;)V":-1;
+Z 0;
+CF 224;
+DD 101;
+DD 224;
+}
+NORM 237 {
+O compound;
+V "many2many";
+P 9;
+S "java/io/PrintStream.java":0,0-0,0;
+B "java.io.PrintStream.newLine()V":-1;
+Z 0;
+CF 188;
+DD 115;
+DD 188;
+}
+NORM 238 {
+O compound;
+V "many2many";
+P 9;
+S "java/io/PrintStream.java":0,0-0,0;
+B "java.io.PrintStream.newLine()V":-1;
+Z 0;
+CF 190;
+DD 121;
+DD 190;
+}
+NORM 239 {
+O compound;
+V "many2many";
+P 9;
+S "java/io/PrintStream.java":0,0-0,0;
+B "java.io.PrintStream.newLine()V":-1;
+Z 0;
+CF 192;
+DD 127;
+DD 192;
+}
+NORM 240 {
+O compound;
+V "many2many";
+P 9;
+S "java/io/PrintStream.java":0,0-0,0;
+B "java.io.PrintStream.newLine()V":-1;
+Z 0;
+CF 133;
+DD 133;
+}
+NORM 241 {
+O compound;
+V "many2many";
+P 9;
+S "java/io/PrintStream.java":0,0-0,0;
+B "java.io.PrintStream.newLine()V":-1;
+Z 0;
+CF 195;
+DD 143;
+DD 195;
+}
+NORM 242 {
+O compound;
+V "many2many";
+P 9;
+S "java/io/PrintStream.java":0,0-0,0;
+B "java.io.PrintStream.newLine()V":-1;
+Z 0;
+CF 197;
+DD 152;
+DD 153;
+DD 197;
+}
+NORM 243 {
+O compound;
+V "many2many";
+P 9;
+S "java/io/PrintStream.java":0,0-0,0;
+B "java.io.PrintStream.newLine()V":-1;
+Z 0;
+CF 199;
+DD 156;
+DD 199;
+}
+NORM 244 {
+O compound;
+V "CALL_RET";
+P 4;
+S "test/starttest1/ExampleIFC.java":6,0-6,0;
+B "test.starttest1.ExampleIFC.main([Ljava/lang/String;)V":-9;
+Z 0;
+HE 8;
+HE 10;
+CF 6;
+CD 8;
+CD 10;
+}
+NORM 245 {
+O compound;
+V "CALL_RET";
+P 4;
+S "test/starttest1/ExampleIFC.java":7,0-7,0;
+B "test.starttest1.ExampleIFC.main([Ljava/lang/String;)V":-9;
+Z 0;
+HE 14;
+CF 14;
+CD 14;
+}
+NORM 246 {
+O compound;
+V "CALL_RET";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-9;
+Z 0;
+HE 37;
+HE 38;
+CF 215;
+CD 37;
+CD 38;
+}
+NORM 247 {
+O compound;
+V "CALL_RET";
+P 7;
+S "java/io/PrintStream.java":739,0-739,0;
+B "java.io.PrintStream.println(Ljava/lang/String;)V":-9;
+Z 0;
+HE 73;
+CF 72;
+CD 73;
+CD 78;
+CD 79;
+CD 80;
+}
+NORM 248 {
+O compound;
+V "CALL_RET";
+P 7;
+S "java/io/PrintStream.java":740,0-740,0;
+B "java.io.PrintStream.println(Ljava/lang/String;)V":-9;
+Z 0;
+HE 76;
+HE 77;
+HE 78;
+HE 79;
+HE 80;
+HE 81;
+CF 205;
+CD 76;
+CD 77;
+CD 78;
+CD 79;
+CD 80;
+CD 81;
+}
+Thread 0 {
+Entry 18;
+Exit 19;
+Fork 0;
+Join 0;
+Context null;
+Dynamic false;
+}
+}
